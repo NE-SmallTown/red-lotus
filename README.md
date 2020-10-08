@@ -2,7 +2,7 @@
 
 A tiny engine of file and template generation powered by React.
 
-This project is inspired by a [tweet](https://twitter.com/dan_abramov/status/1285471956305956864) of Dan Abramov
+This project is inspired by a [tweet](https://twitter.com/dan_abramov/status/1285471956305956864) of Dan Abramov.
 
 # Motivation
 
