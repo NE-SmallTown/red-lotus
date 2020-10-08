@@ -53,7 +53,21 @@ const rootContainer = path.resolve(__dirname, 'this-is-the-generation-result-roo
 RedLotus.render(React.createElement(HelloFile, { platform: 'node' }), rootContainer);
 ```
 
-Then, after run `node ./index.js`, you will see that there will be a directory named `this-is-the-generation-result-root-path`
+The result will be:
+
+```bash
+root
+   |-- this-is-the-generation-result-root-path
+   |   |-- hello.js
+```
+
+```javascript
+// hello.js
+
+console.log('Hello Node!');
+```
+
+After run `node ./index.js`, you will see that there will be a directory named `this-is-the-generation-result-root-path`
 which has a `hello.js` file in it. And the content of `hello.js` is `console.log('Hello Node!');`.
 
 ## Use ES Module and JSX by `red-lotus-cli`
