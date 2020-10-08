@@ -8,7 +8,7 @@
     "react node file renderer",
     "react boilerplate generation"
   ],
-  "description": "A tiny template engine powered by React",
+  "description": "A tiny engine of file and template generation powered by React.",
   "scripts": {
     "test": "jest",
     "clean": "node ./scripts/clean.js",
