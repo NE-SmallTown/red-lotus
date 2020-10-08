@@ -1,6 +1,6 @@
 {
   "name": "red-lotus-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "CLI for red-lotus",
   "main": "./build/index.js",
   "bin": {
