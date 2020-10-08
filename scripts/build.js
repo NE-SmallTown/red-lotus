@@ -53,7 +53,7 @@ function transformDir (dirPath) {
 function copyFiles (dirPath) {
   const packageRootPath = path.resolve(dirPath, '../');
 
-  [ 'package.json', 'README.md' ].forEach(fileName => {
+  [ 'README.md' ].forEach(fileName => {
     const fileInputPath = path.resolve(packageRootPath, fileName);
     const fileOutputPath = path.resolve(packageRootPath, `build/${fileName}`);
 

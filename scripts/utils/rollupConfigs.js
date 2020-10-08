@@ -46,7 +46,6 @@ module.exports = [
         nodePolyfills(),
         copy({
           targets: [
-            { src: 'packages/red-lotus/package.json', dest: 'packages/red-lotus/build' },
             { src: 'packages/red-lotus/README.md', dest: 'packages/red-lotus/build' }
           ]
         }),
@@ -75,7 +74,6 @@ module.exports = [
         nodePolyfills(),
         copy({
           targets: [
-            { src: 'packages/red-lotus-dom/package.json', dest: 'packages/red-lotus-dom/build' },
             { src: 'packages/red-lotus-dom/README.md', dest: 'packages/red-lotus-dom/build' }
           ]
         }),
