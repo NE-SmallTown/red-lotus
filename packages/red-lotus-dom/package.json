@@ -1,6 +1,6 @@
 {
   "name": "red-lotus-dom",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "DOM side for red-lotus",
   "main": "./build/index.js",
   "scripts": {
