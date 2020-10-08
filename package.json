@@ -1,0 +1,82 @@
+{
+  "keywords": [
+    "react",
+    "node",
+    "template compiler",
+    "template engine",
+    "project generation",
+    "react node file renderer",
+    "react boilerplate generation"
+  ],
+  "description": "A tiny template engine powered by React",
+  "scripts": {
+    "test": "jest",
+    "clean": "node ./scripts/clean.js",
+    "build": "REDLOTUS_ENV=prod node ./scripts/build.js",
+    "prepublishOnly": "npm run build",
+    "bootstrap": "npx lerna bootstrap",
+    "lint": "eslint --fix src/**",
+    "release": "npx lerna version --force-publish && npx lerna publish from-package --dist-tag latest"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css}": [
+      "eslint"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-transform-runtime": "^7.10.3",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.4",
+    "@rollup/plugin-babel": "^5.0.4",
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^8.1.0",
+    "chalk": "^4.1.0",
+    "fs-extra": "^9.0.1",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "lint-staged": "^10.2.9",
+    "memfs": "^3.2.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.18.0",
+    "rollup-plugin-node-polyfills": "^0.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-heaven": "^1.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.5",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "eslint-plugin-standard": "^4.0.1",
+    "babel-jest": "^26.0.1",
+    "babel-eslint": "^10.1.0",
+    "lerna": "^3.22.1"
+  },
+  "engines": {
+    "npm": ">=6.0.0"
+  },
+  "author": "NE-SmallTown",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NE-SmallTown/red-lotus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NE-SmallTown/red-lotus/issues"
+  },
+  "homepage": "https://github.com/NE-SmallTown/red-lotus#readme"
+}

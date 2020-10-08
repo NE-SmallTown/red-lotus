@@ -1,0 +1,14 @@
+{
+  "description": "Basic example for red-lotus",
+  "scripts": {
+    "start": "redlotus start"
+  },
+  "dependencies": {
+    "@babel/runtime-corejs2": "^7.11.2",
+    "react": "^16.13.1",
+    "red-lotus": "file:../../packages/red-lotus",
+    "red-lotus-cli": "file:../../packages/red-lotus-cli"
+  },
+  "author": "NE-SmallTown",
+  "license": "ISC"
+}

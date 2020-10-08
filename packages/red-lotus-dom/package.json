@@ -1,0 +1,20 @@
+{
+  "name": "red-lotus-dom",
+  "version": "0.0.1",
+  "description": "DOM side for red-lotus",
+  "main": "./build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "build",
+    "README.md"
+  ],
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "@babel/runtime-corejs2": "^7.11.0"
+  },
+  "author": "NE-SmallTown",
+  "license": "ISC"
+}

@@ -1,0 +1,5 @@
+.idea
+node_modules
+packages/**/build
+examples/**/build
+red-lotus-build

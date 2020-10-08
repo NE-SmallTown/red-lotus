@@ -1,0 +1,3 @@
+exports.RedLotusCurrent = {
+  currentRoot: null,
+};
