@@ -13,7 +13,6 @@
     "test": "jest",
     "clean": "node ./scripts/clean.js",
     "build": "REDLOTUS_ENV=prod node ./scripts/build.js",
-    "prepublishOnly": "npm run build",
     "bootstrap": "npx lerna bootstrap",
     "lint": "eslint --fix src/**",
     "release": "npx lerna version --force-publish && npx lerna publish from-package --dist-tag latest"
