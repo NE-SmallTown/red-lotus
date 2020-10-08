@@ -2,6 +2,7 @@ const resolve = require('@rollup/plugin-node-resolve').default;
 const commonjs = require('@rollup/plugin-commonjs');
 const babel = require('@rollup/plugin-babel').default;
 const nodePolyfills = require('rollup-plugin-node-polyfills');
+const copy = require('rollup-plugin-copy');
 const path = require('path');
 
 const redLotusPkg = require('../../packages/red-lotus/package.json');
@@ -43,9 +44,16 @@ module.exports = [
         resolve(),
         commonjs(),
         nodePolyfills(),
+        copy({
+          targets: [
+            { src: 'packages/red-lotus/package.json', dest: 'packages/red-lotus/build' },
+            { src: 'packages/red-lotus/README.md', dest: 'packages/red-lotus/build' }
+          ]
+        }),
       ],
       external: makeExternalPredicate(redLotusPkgExternal),
     },
+
     outputOptions: {
       file: path.resolve(projectRootPath, 'packages/red-lotus/build/index.js'),
       format: 'cjs',
@@ -65,9 +73,16 @@ module.exports = [
         resolve(),
         commonjs(),
         nodePolyfills(),
+        copy({
+          targets: [
+            { src: 'packages/red-lotus-dom/package.json', dest: 'packages/red-lotus-dom/build' },
+            { src: 'packages/red-lotus-dom/README.md', dest: 'packages/red-lotus-dom/build' }
+          ]
+        }),
       ],
       external: makeExternalPredicate(redLotusDomPkgExternal),
     },
+
     outputOptions: {
       file: path.resolve(projectRootPath, 'packages/red-lotus-dom/build/index.js'),
       format: 'cjs',

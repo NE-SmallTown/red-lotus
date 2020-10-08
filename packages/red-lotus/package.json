@@ -8,7 +8,8 @@
   },
   "files": [
     "build",
-    "README.md"
+    "README.md",
+    "package.json"
   ],
   "dependencies": {
     "red-lotus-dom": "^0.0.1",

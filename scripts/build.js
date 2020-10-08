@@ -52,10 +52,13 @@ function transformDir (dirPath) {
 
 function copyFiles (dirPath) {
   const packageRootPath = path.resolve(dirPath, '../');
-  const packageJsonFileInputPath = path.resolve(packageRootPath, 'package.json');
-  const packageJsonFileOutputPath = path.resolve(packageRootPath, 'build/package.json');
 
-  fs.copySync(packageJsonFileInputPath, packageJsonFileOutputPath);
+  [ 'package.json', 'README.md' ].forEach(fileName => {
+    const fileInputPath = path.resolve(packageRootPath, fileName);
+    const fileOutputPath = path.resolve(packageRootPath, `build/${fileName}`);
+
+    fs.copySync(fileInputPath, fileOutputPath);
+  });
 }
 
 function buildNodePackage () {
