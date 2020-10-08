@@ -7,9 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
-    "build/",
-    "README.md",
-    "package.json"
+    "build",
+    "README.md"
   ],
   "dependencies": {
     "@babel/runtime-corejs2": "^7.11.2",

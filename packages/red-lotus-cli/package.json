@@ -7,9 +7,8 @@
     "redlotus": "./build/index.js"
   },
   "files": [
-    "build/",
-    "README.md",
-    "package.json"
+    "build",
+    "README.md"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
