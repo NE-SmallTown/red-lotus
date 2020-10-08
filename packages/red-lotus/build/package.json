@@ -1,0 +1,28 @@
+{
+  "name": "red-lotus",
+  "version": "0.0.3",
+  "description": "Entry of red-lotus",
+  "main": "./build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "build",
+    "README.md"
+  ],
+  "dependencies": {
+    "@babel/runtime-corejs2": "^7.11.2",
+    "red-lotus-dom": "^0.0.3",
+    "red-lotus-dom-server": "^0.0.3"
+  },
+  "author": "NE-SmallTown",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NE-SmallTown/red-lotus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NE-SmallTown/red-lotus/issues"
+  },
+  "homepage": "https://github.com/NE-SmallTown/red-lotus#readme"
+}
