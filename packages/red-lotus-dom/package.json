@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
-    "build",
+    "build/",
     "README.md",
     "package.json"
   ],
@@ -17,5 +17,13 @@
     "react-dom": "^16.13.1"
   },
   "author": "NE-SmallTown",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NE-SmallTown/red-lotus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NE-SmallTown/red-lotus/issues"
+  },
+  "homepage": "https://github.com/NE-SmallTown/red-lotus#readme"
 }

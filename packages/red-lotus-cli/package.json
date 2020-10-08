@@ -7,7 +7,7 @@
     "redlotus": "./build/index.js"
   },
   "files": [
-    "build",
+    "build/",
     "README.md",
     "package.json"
   ],
@@ -33,5 +33,13 @@
     "meow": "^7.1.1",
     "rollup": "^2.28.2",
     "rollup-plugin-node-polyfills": "^0.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NE-SmallTown/red-lotus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NE-SmallTown/red-lotus/issues"
+  },
+  "homepage": "https://github.com/NE-SmallTown/red-lotus#readme"
 }

@@ -25,7 +25,7 @@ const RedLotusDomServerRenderer = ReactReconciler({
   // createInstance 在创建 host node（element type 为 string）的时候调用
   // https://github.com/facebook/react/blob/0c52e24cb65a8f1c370184f58ee2d5601a3acd7f/packages/react-reconciler/src/ReactFiber.new.js#L480
   createInstance (type, props) {
-    console.log(1111, 'createInstance', type, props);
+    // console.log('createInstance', type, props);
 
     switch (type) {
       case REDLOTUS_FILE_TYPE: {
@@ -51,14 +51,14 @@ const RedLotusDomServerRenderer = ReactReconciler({
   // 比如把 <div><span><span><div> 插入到 <p> 里面，只有插入 p 的时候才会调用 appendChild
   // 而把 span 插入到 div 里面是不会调用 appendChild 的。。。那他调的是什么呢？他会调用 appendInitialChild 。。。
   appendChild (parent, child) {
-    console.log(2222, 'appendChild');
-    console.log(2222, parent, child);
+    // console.log('appendChild');
+    // console.log(parent, child);
   },
 
   // 节点未插入已存在于界面上的 DOM 之前的（在 VDOM 中）自身内部的插入
   // 具体看上面的注释
   appendInitialChild (parentInstance, child) {
-    console.log(333333, 'appendInitialChild', parentInstance, child);
+    // console.log('appendInitialChild', parentInstance, child);
 
     switch (parentInstance.tag) {
       case REDLOTUS_FILE_TYPE:
@@ -75,7 +75,7 @@ const RedLotusDomServerRenderer = ReactReconciler({
     rootContainerInstance,
     internalInstanceHandle,
   ) {
-    console.log(8888, 'createTextInstance', text, rootContainerInstance, internalInstanceHandle);
+    // console.log('createTextInstance', text, rootContainerInstance, internalInstanceHandle);
 
     return text;
   },
@@ -96,7 +96,7 @@ const RedLotusDomServerRenderer = ReactReconciler({
   // https://github.com/facebook/react/blob/23595ff593b2e53ddfec2a08e848704d15d84b51/packages/react-reconciler/src/ReactFiberCommitWork.new.js#L1280
   // 只有一开始的 render 或者 portal 才会调用 appendChildToContainer
   appendChildToContainer (parentInstance, child) {
-    console.log(77777, 'appendChildToContainer', parentInstance, child);
+    // console.log('appendChildToContainer', parentInstance, child);
 
     // 严格来讲，这里其实只应该把 child commit 到 fs 中
     // 但是那样有点麻烦（懒）。。
@@ -110,11 +110,11 @@ const RedLotusDomServerRenderer = ReactReconciler({
   },
 
   commitUpdate (instance, updatePayload, type, oldProps, newProps) {
-    console.log(987, 'commitUpdate', instance, updatePayload, type, oldProps, newProps);
+    // console.log('commitUpdate', instance, updatePayload, type, oldProps, newProps);
   },
 
   prepareUpdate (instance, type, oldProps, newProps) {
-    console.log(98743, 'prepareUpdate', instance, type, oldProps, newProps);
+    // console.log('prepareUpdate', instance, type, oldProps, newProps);
   },
 
   // TODO 下面的这些不加跑不起来，原因还未知，他们是干啥的也还未知
