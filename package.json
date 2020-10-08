@@ -12,6 +12,7 @@
   "scripts": {
     "test": "jest",
     "clean": "node ./scripts/clean.js",
+    "prepublishOnly": "npm run build",
     "build": "REDLOTUS_ENV=prod node ./scripts/build.js",
     "bootstrap": "npx lerna bootstrap",
     "lint": "eslint --fix src/**",
