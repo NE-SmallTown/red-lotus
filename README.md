@@ -1,6 +1,6 @@
 # red-lotus
 
-A tiny engine of file and template generation powered by React.
+A tiny engine of file and template generation implemented by react-renderer for Node.js.
 
 This project is inspired by a [tweet](https://twitter.com/dan_abramov/status/1285471956305956864) of Dan Abramov.
 
